@@ -4,7 +4,7 @@
 
 [![seiyaibuki0523](https://skillicons.dev/icons?i=arduino,c,cpp,html,java,js,nodejs,php,py,raspberrypi,vscode,powershell,linux,idea,docker,discord,github,anaconda,blender,flutter&perline=5)](https://skillicons.dev)
 
-![Ibuki's GitHub stats](https://github-readme-stats.vercel.app/api?username=seiyaibuki0523&show_icons=true&theme=transparent&card_width=600*400)  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seiyaibuki0523&layout=compact&card_width=600*400)
+![Ibuki's GitHub stats](https://github-readme-stats.vercel.app/api?username=seiyaibuki0523&show_icons=true&theme=transparent&card_width=200*100)  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=seiyaibuki0523&layout=compact&card_width=200*100)
 
 
 <!--
