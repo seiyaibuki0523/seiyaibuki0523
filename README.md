@@ -5,7 +5,7 @@
 [![seiyaibuki0523](https://skillicons.dev/icons?i=arduino,c,cpp,html,java,js,nodejs,php,py,raspberrypi,vscode,powershell,linux,idea,docker,discord,github,anaconda,blender,flutter&perline=5)](https://skillicons.dev)
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&bg_color=00000000" />
+  <img height=150 align="center" src="https://github-readme-stats.vercel.app/api?username=seiyaibuki0523&show_icons=true&bg_color=00000000" />
 </a>
 <a href="https://github.com/anuraghazra/convoychat">
   <img height=150 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=seiyaibuki0523&layout=compact&card_width=300*150" />
