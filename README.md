@@ -1,6 +1,6 @@
 ## Casper Chen <sub>· Cappuccinoo</sub>
 
-Security researcher at Cevanex, New Taipei City, Taiwan. I work on software security, large language models, and their application to automated vulnerability detection — in particular on making LLM-based detectors trustworthy by verifying what they report rather than shipping it as found.
+Security researcher at Cevanex, New Taipei City, Taiwan. I work on software security, large language models, and their application to automated vulnerability detection — in particular on making LLM-based detectors trustworthy by verifying what they report rather than shipping it as found. The same work turns up real bugs in open-source projects, which I report upstream (four CVEs in 2026, listed below).
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--8175--4236-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0002-8175-4236)
 [![IEEE Access](https://img.shields.io/badge/IEEE%20Access-10.1109%2FACCESS.2026.3739345-00629B?logo=ieee&logoColor=white)](https://doi.org/10.1109/ACCESS.2026.3739345)
@@ -46,6 +46,20 @@ Everything needed to recompute every table of the article, audit the adjudicatio
 | `analysis/` | `make_tables.sh` regenerates every table from the recorded outputs; the expected output is included |
 
 Versions: Zenodo [v1.0](https://doi.org/10.5281/zenodo.22704663) (complete archive) · [v1.1](https://doi.org/10.5281/zenodo.23030516) (addendum for the accepted article) · git tags `zenodo-v1.0`, `zenodo-v1.1`.
+
+### Vulnerability disclosures
+
+Found with the pipeline described above (the memos pair) or by model-assisted review of its candidate reports (mini-snmpd, uftpd), then reported to the maintainers and fixed upstream. All credits are public.
+
+| ID | Project | Issue | CVSS 3.1 | Affected → fixed |
+|---|---|---|---|---|
+| [CVE-2026-51584](https://www.cve.org/CVERecord?id=CVE-2026-51584) | [usememos/memos](https://github.com/usememos/memos) | SSO sign-in matched identities on an attacker-controllable identifier instead of the IdP subject claim → unauthenticated account takeover (CWE-287) · [write-up](https://gist.github.com/seiyaibuki0523/33a4c06eb7d10914e5e5152ecd5100ec) | **9.8 Critical** | ≤ v0.27.1 → v0.28.0 |
+| [CVE-2026-51583](https://www.cve.org/CVERecord?id=CVE-2026-51583) | [usememos/memos](https://github.com/usememos/memos) | Authenticated SSRF through webhook target validation, reaching internal addresses (CWE-918) · [write-up](https://gist.github.com/seiyaibuki0523/d8af15eb555808319a2633269a9ebb80) | **8.5 High** | ≤ v0.30.0 |
+| [CVE-2026-59961](https://github.com/troglobit/mini-snmpd/security/advisories/GHSA-c9g2-5ghh-8g8c) | [troglobit/mini-snmpd](https://github.com/troglobit/mini-snmpd) | Unauthenticated out-of-bounds read in the SNMP request parser (`decode_oid` / `decode_str` / `decode_ptr`), one UDP packet crashes the daemon before the community string is checked (CWE-125) | **8.2 High** | ≤ 1.6 → 1.7 |
+| [CVE-2026-59964](https://github.com/troglobit/uftpd/security/advisories/GHSA-vqhc-mmjf-972h) | [troglobit/uftpd](https://github.com/troglobit/uftpd) | Stack-based buffer overflow in `compose_path()` via an overlong FTP path from a logged-in (incl. anonymous) client (CWE-121) | **5.9 Medium** | ≤ 2.15 → 2.16 |
+| [GHSA-c563-c7rv-xjc3](https://github.com/cmintey/wishlist/security/advisories/GHSA-c563-c7rv-xjc3) | [cmintey/wishlist](https://github.com/cmintey/wishlist) | Authenticated reflected SSRF via product-URL metadata fetching (`/api/product`), reflecting internal responses to the caller (CWE-918) | **7.7 High** | < 0.67.0 → 0.67.0 |
+
+<sub>CVE-2026-59961 and CVE-2026-59964 were assigned through the projects' GitHub security advisories (July 2026); their records are still marked reserved on cve.org, so the IDs link to the advisories. GHSA-c563-c7rv-xjc3 has no CVE yet.</sub>
 
 ### Contact
 
