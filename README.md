@@ -33,20 +33,6 @@ LLM-based vulnerability detectors hallucinate, and the resulting false positives
 
 </details>
 
-### Replication package — [`msfv-replication`](https://github.com/seiyaibuki0523/msfv-replication)
-
-Everything needed to recompute every table of the article, audit the adjudication study, and re-run the pipeline. The code and documents are on GitHub, byte-identical to the Zenodo archive (verifiable against `CHECKSUMS.sha256`); the 2.8 GB of raw run outputs stay on Zenodo and are fetched and verified by one script.
-
-| Directory | Contents |
-|---|---|
-| `frozen-code/` | the pipeline exactly as it ran: detection layers 0–5, the multi-signal verification stage, PoC generator / validator / sandbox, Semgrep rule packs |
-| `experiments/` | the launcher of every run and the labelled ground truth of the four benchmarks |
-| `data/ablation/` | 132 run directories, 964 configurations — the raw output behind every reported number (`scripts/fetch_zenodo_data.sh`) |
-| `data/adjudication/` | the 253-item adjudication study: protocol, items, both judges' labels and justifications |
-| `analysis/` | `make_tables.sh` regenerates every table from the recorded outputs; the expected output is included |
-
-Versions: Zenodo [v1.0](https://doi.org/10.5281/zenodo.22704663) (complete archive) · [v1.1](https://doi.org/10.5281/zenodo.23030516) (addendum for the accepted article) · git tags `zenodo-v1.0`, `zenodo-v1.1`.
-
 ### Vulnerability disclosures
 
 Found with the pipeline described above (the memos pair) or by model-assisted review of its candidate reports (mini-snmpd, uftpd), then reported to the maintainers and fixed upstream. All credits are public.
