@@ -51,7 +51,5 @@ Versions: Zenodo [v1.0](https://doi.org/10.5281/zenodo.22704663) (complete archi
 
 casperchen@cappuccinoo.com · [ORCID 0009-0002-8175-4236](https://orcid.org/0009-0002-8175-4236)
 
-<p>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img height="150" src="https://github-readme-stats.vercel.app/api?username=seiyaibuki0523&show_icons=true&bg_color=00000000" alt="GitHub stats" /></a>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=seiyaibuki0523&layout=compact&card_width=300" alt="Top languages" /></a>
-</p>
+[![GitHub followers](https://img.shields.io/github/followers/seiyaibuki0523?style=flat&logo=github&logoColor=white&label=followers&color=181717)](https://github.com/seiyaibuki0523?tab=followers)
+[![GitHub stars](https://img.shields.io/github/stars/seiyaibuki0523?affiliations=OWNER&style=flat&logo=github&logoColor=white&label=stars&color=181717)](https://github.com/seiyaibuki0523?tab=repositories)
